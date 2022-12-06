@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "feed": "4.2.2",
     "framer-motion": "^7.6.9",
     "gray-matter": "^4.0.3",
     "next": "12.3.1",

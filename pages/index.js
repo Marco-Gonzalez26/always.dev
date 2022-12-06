@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { getAllFilesMetaData } from '../lib/mdx.js'
+import { createRssFeed, getAllFilesMetaData } from '../lib/mdx.js'
 import ListOfPosts from 'components/ListOfPosts.js'
 import ListOfBooks from 'components/ListOfBooks.js'
 import Sidebar from 'components/Sidebar.js'
@@ -31,6 +31,7 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesMetaData()
+  await createRssFeed()
   return {
     props: {
       posts

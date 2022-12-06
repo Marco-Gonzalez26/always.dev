@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Always-dev's Blog</title>
+        <link>localhost:3000</link>
+        <description></description>
+        <lastBuildDate>Tue, 06 Dec 2022 03:53:04 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <item>
+            <title><![CDATA[Como hacer un blog con next js 2]]></title>
+            <link>localhost:3000/posts/tercer-post</link>
+            <guid>localhost:3000/posts/tercer-post</guid>
+            <pubDate>Fri, 25 Nov 2022 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[ Este es el tercer post en mi blog, ya esta tomando forma]]></content:encoded>
+            <author>magp260602@gmail.com (Marco Gonzalez)</author>
+        </item>
+        <item>
+            <title><![CDATA[Segundo post]]></title>
+            <link>localhost:3000/posts/segundo-post</link>
+            <guid>localhost:3000/posts/segundo-post</guid>
+            <pubDate>Mon, 12 Dec 2022 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[Awesome!]]></content:encoded>
+            <author>magp260602@gmail.com (Marco Gonzalez)</author>
+        </item>
+        <item>
+            <title><![CDATA[Como hacer un blog con next js]]></title>
+            <link>localhost:3000/posts/hello-word</link>
+            <guid>localhost:3000/posts/hello-word</guid>
+            <pubDate>Tue, 04 Oct 2022 05:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[ Este es mi primer post en mi blog]]></content:encoded>
+            <author>magp260602@gmail.com (Marco Gonzalez)</author>
+        </item>
+    </channel>
+</rss>

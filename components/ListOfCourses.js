@@ -5,7 +5,7 @@ function ListOfCourses() {
   return (
     < >
       <h2 className="text-4xl font-mono font-extrabold my-10">
-        Courses that I've made
+        Awesome Platforms!
       </h2>
     </>
   )

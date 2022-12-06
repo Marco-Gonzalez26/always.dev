@@ -8,7 +8,7 @@ function ListOfBooks() {
       <h2 className="text-4xl font-mono font-extrabold my-10">
         Awesome books!
       </h2>
-      <div className="flex items-center justify-center flex-col md:flex-row gap-10 max-w-4xl">
+      <div className="flex items-center justify-center flex-col md:flex-row md:justify-start gap-10 max-w-4xl">
         {books?.map(({ id, author, img, title, link, color }) => {
           return (
             <div
@@ -25,7 +25,6 @@ function ListOfBooks() {
                   />
                   <h4 className="font-mono">{title}</h4>
                   <small className="font-mono">{author}</small>
-
               </a>
             </div>
           )
