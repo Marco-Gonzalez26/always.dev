@@ -17,7 +17,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/dev.png" />
       </Head>
 
-      <section className="flex flex-col relative w-2/3 sm:w-full">
+      <section className="flex flex-col relative  sm:w-full">
         <ListOfPosts posts={posts} />
         {/* <ListOfCourses /> */}
         <ListOfBooks />

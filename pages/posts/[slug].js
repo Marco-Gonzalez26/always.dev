@@ -1,10 +1,24 @@
-import { getFileBySlug, getFiles } from '../../lib/mdx.js'
+import Head from 'next/head.js'
 import { MDXRemote } from 'next-mdx-remote'
+
+
 import MDXComponents from '../../components/MDX/MDXComponents.js'
+import { getFileBySlug, getFiles } from '../../lib/mdx.js'
 
 export default function Post({ source, fromMatter }) {
-  console.log({ fromMatter })
-  return <MDXRemote {...source} components={MDXComponents} />
+  console.log(fromMatter)
+  return (
+    <>
+      <Head>
+      <title>always.dev | {fromMatter.title}</title>
+        <meta
+          name="description"
+          content={fromMatter.description}
+        />
+      </Head>
+      <MDXRemote {...source} components={MDXComponents} />
+    </>
+  )
 }
 
 export async function getStaticProps({ params }) {

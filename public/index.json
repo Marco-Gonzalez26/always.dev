@@ -1,0 +1,41 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Always-dev's Blog",
+    "home_page_url": "localhost:3000",
+    "feed_url": "localhost:3000/index.json",
+    "author": {
+        "name": "Marco Gonzalez"
+    },
+    "items": [
+        {
+            "id": "localhost:3000/posts/tercer-post",
+            "url": "localhost:3000/posts/tercer-post",
+            "title": "Como hacer un blog con next js 2",
+            "summary": " Este es el tercer post en mi blog, ya esta tomando forma",
+            "date_modified": "2022-11-25T05:00:00.000Z",
+            "author": {
+                "name": "Marco Gonzalez"
+            }
+        },
+        {
+            "id": "localhost:3000/posts/segundo-post",
+            "url": "localhost:3000/posts/segundo-post",
+            "title": "Segundo post",
+            "summary": "Awesome!",
+            "date_modified": "2022-12-12T05:00:00.000Z",
+            "author": {
+                "name": "Marco Gonzalez"
+            }
+        },
+        {
+            "id": "localhost:3000/posts/hello-word",
+            "url": "localhost:3000/posts/hello-word",
+            "title": "Como hacer un blog con next js",
+            "summary": " Este es mi primer post en mi blog",
+            "date_modified": "2022-10-04T05:00:00.000Z",
+            "author": {
+                "name": "Marco Gonzalez"
+            }
+        }
+    ]
+}
