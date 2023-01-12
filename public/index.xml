@@ -2,31 +2,31 @@
 <rss version="2.0">
     <channel>
         <title>Always-dev's Blog</title>
-        <link>localhost:3000</link>
+        <link>https://always-dev-marcoagonzalezp.vercel.app</link>
         <description></description>
-        <lastBuildDate>Thu, 05 Jan 2023 01:35:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jan 2023 03:35:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <item>
             <title><![CDATA[Como hacer un blog con next js 2]]></title>
-            <link>localhost:3000/posts/tercer-post</link>
-            <guid>localhost:3000/posts/tercer-post</guid>
+            <link>https://always-dev-marcoagonzalezp.vercel.app/posts/tercer-post</link>
+            <guid>https://always-dev-marcoagonzalezp.vercel.app/posts/tercer-post</guid>
             <pubDate>Fri, 25 Nov 2022 05:00:00 GMT</pubDate>
             <description><![CDATA[ Este es el tercer post en mi blog, ya esta tomando forma]]></description>
             <author>magp260602@gmail.com (Marco Gonzalez)</author>
         </item>
         <item>
             <title><![CDATA[Segundo post]]></title>
-            <link>localhost:3000/posts/segundo-post</link>
-            <guid>localhost:3000/posts/segundo-post</guid>
+            <link>https://always-dev-marcoagonzalezp.vercel.app/posts/segundo-post</link>
+            <guid>https://always-dev-marcoagonzalezp.vercel.app/posts/segundo-post</guid>
             <pubDate>Mon, 12 Dec 2022 05:00:00 GMT</pubDate>
             <description><![CDATA[Awesome!]]></description>
             <author>magp260602@gmail.com (Marco Gonzalez)</author>
         </item>
         <item>
             <title><![CDATA[Como hacer un blog con next js]]></title>
-            <link>localhost:3000/posts/hello-word</link>
-            <guid>localhost:3000/posts/hello-word</guid>
+            <link>https://always-dev-marcoagonzalezp.vercel.app/posts/hello-word</link>
+            <guid>https://always-dev-marcoagonzalezp.vercel.app/posts/hello-word</guid>
             <pubDate>Tue, 04 Oct 2022 05:00:00 GMT</pubDate>
             <description><![CDATA[ Este es mi primer post en mi blog]]></description>
             <author>magp260602@gmail.com (Marco Gonzalez)</author>

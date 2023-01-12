@@ -8,7 +8,7 @@ function Layout({ children }) {
         <title>always.dev | Home</title>
         <meta
           name="description"
-          content="This blog is made with ❤️ by Marco always.dev"
+          content="This blog is made with ❤️ by Marco González | always.dev"
         />
         <link rel="icon" href="/dev.png" />
       </Head>

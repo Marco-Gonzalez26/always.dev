@@ -1,20 +1,26 @@
+import { useEffect } from 'react'
 import Head from 'next/head.js'
 import { MDXRemote } from 'next-mdx-remote'
 
-
+// Get MDX Components
 import MDXComponents from '../../components/MDX/MDXComponents.js'
+//Get functions to get the Markdown Data from directory
 import { getFileBySlug, getFiles } from '../../lib/mdx.js'
 
+// Import Prismjs to highlight the code
+import Prism from 'prismjs'
+
 export default function Post({ source, fromMatter }) {
-  console.log(fromMatter)
+  useEffect(() => {
+    if (window != undefined) {
+      Prism.highlightAll()
+    }
+  }, [])
   return (
     <>
       <Head>
-      <title>always.dev | {fromMatter.title}</title>
-        <meta
-          name="description"
-          content={fromMatter.description}
-        />
+        <title>always.dev | {fromMatter.title}</title>
+        <meta name="description" content={fromMatter.description} />
       </Head>
       <MDXRemote {...source} components={MDXComponents} />
     </>

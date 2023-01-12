@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { createRssFeed, getAllFilesMetaData } from '../lib/mdx.js'
+
 import ListOfPosts from 'components/ListOfPosts.js'
 import ListOfBooks from 'components/ListOfBooks.js'
 import Sidebar from 'components/Sidebar.js'
@@ -9,10 +10,10 @@ export default function Home({ posts }) {
   return (
     <div className=" flex  w-full relative">
       <Head>
-        <title>always.dev | Home</title>
+        <title>always.dev | Inicio</title>
         <meta
           name="description"
-          content="This blog is made with ❤️ by Marco always.dev"
+          content="Este blog esta hecho con ❤️ por Marco always.dev"
         />
         <link rel="icon" href="/dev.png" />
       </Head>
@@ -31,7 +32,9 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesMetaData()
+
   await createRssFeed()
+
   return {
     props: {
       posts
