@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch } from 'react-instantsearch-dom'
 
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { HiBars3BottomLeft, HiOutlineXMark } from 'react-icons/hi2'
-import { HiCode, HiOutlineSearch } from 'react-icons/hi'
+import { HiCode } from 'react-icons/hi'
 import links from '../lib/links'
 import SearchBox from './SearchBox'
 import Hits from './Hits'
@@ -16,6 +16,7 @@ function Navbar() {
     'JQRV8YDQDC',
     '890d75ece43eb38f01c9f8b308e65f82'
   )
+  const inputRef = useRef(null)
 
   return (
     <>
@@ -30,8 +31,8 @@ function Navbar() {
         <div className="hidden lg:flex gap-5 items-center">
           <div>
             <InstantSearch searchClient={searchClient} indexName="always-dev">
-              <SearchBox loadingIndicator={true} />
-              <Hits />
+              <SearchBox loadingIndicator={true} inputRef={inputRef} z/>
+              <Hits inputRef={inputRef}/>
             </InstantSearch>
           </div>
 
@@ -55,7 +56,7 @@ function Navbar() {
       {open && (
         <AnimatePresence>
           <motion.ul
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.2 }}
             initial={{ x: 500 }}
             animate={{ x: 0 }}
             key="motion.ul"

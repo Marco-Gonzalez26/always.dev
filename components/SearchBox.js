@@ -1,16 +1,19 @@
-import { connectSearchBox } from "react-instantsearch-dom"
+import { connectSearchBox } from 'react-instantsearch-dom'
 
-function SearchBox({ refine }) {
-    return (
-        <>
-            <input
-                id="algolia_search"
-                type="search"
-                placeholder="Search for articles!"
-                onChange={(e) => refine(e.currentTarget.value)}
-            />
-        </>
-    )
+function SearchBox({ refine  }) {
+  return (
+    <>
+      <input
+        className="p-2  rounded-lg transition-all bg-slate-100  "
+        id="algolia_search"
+
+        type="search"
+        
+        placeholder="Buscar post..."
+        onChange={(e) => refine(e.currentTarget.value)}
+      />
+    </>
+  )
 }
 
 export default connectSearchBox(SearchBox)
